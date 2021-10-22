@@ -209,7 +209,7 @@ if page == 'Prédiction de la consommation':
     st.subheader('Prédiction sur une année complète')
     st.markdown("\n")
     st.markdown('Quelle année souhaitez-vous prédire?')
-    col1, col2, col3, col4, col5 = st.beta_columns(5)
+    col1, col2, col3, col4, col5 = st.columns(5)
     with col1:
         annee = st.selectbox("",options=["2019",'2020'])
         
@@ -334,7 +334,7 @@ if page == 'Prédiction de la consommation':
            
         # Année/Région
         if time == 'Année':
-            col1, col2 = st.beta_columns(2)
+            col1, col2 = st.columns(2)
             with col1:
                 region = st.selectbox('Sélectionnez la zone géographique :',
         options=["Territoire national",'Pays de la Loire', 'Normandie', 'Grand Est',
@@ -370,7 +370,7 @@ if page == 'Prédiction de la consommation':
         
         # Mois/Région
         if time == 'Mois':
-            col1, col2 = st.beta_columns(2)
+            col1, col2 = st.columns(2)
             
             with col1:
                 region = st.selectbox('Sélectionnez la zone géographique :',
@@ -760,7 +760,7 @@ if page == 'Prédiction de la consommation':
             y_pred = y_mean_2016_to_2018
     
         # Machine Learning 19
-        col1, col2 = st.beta_columns(2)
+        col1, col2 = st.columns(2)
         with col1:
             model = st.radio(label="Sélectionnez l'algorithme à tester :", 
                          options=['LinearRegression','RidgeCV','LassoCV',
@@ -848,7 +848,7 @@ if page == 'Prédiction de la consommation':
                  options = ['Année','Mois'])
         
         if time == 'Année':
-            col1, col2 = st.beta_columns(2)
+            col1, col2 = st.columns(2)
             with col1:
                 region = st.selectbox('Sélectionnez la zone géographique :',
         options=["Territoire national",'Pays de la Loire', 'Normandie', 'Grand Est',
@@ -884,7 +884,7 @@ if page == 'Prédiction de la consommation':
           
             
         if time == 'Mois':
-            col1, col2 = st.beta_columns(2)
+            col1, col2 = st.columns(2)
             
             with col1:
                 region = st.selectbox('Sélectionnez la zone géographique :',
